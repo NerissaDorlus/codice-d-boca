@@ -1,0 +1,77 @@
+/* normalize css*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding:0;
+    box-sizing: inherit;
+}
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+body {
+    background-color: aqua;
+    /*background: url("https://grillatqc.com/wp-content/uploads/2016/06/menu-background.jpg") no-repeat fixed center;*/
+    background-image:url(https://grillatqc.com/wp-content/uploads/2016/06/menu-background.jpg) ;
+    background-repeat: none;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav > ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 30px;
+    background-color: rgb(118 152 78 / 77%) 
+}
+
+nav > ul > li {
+    margin: 0 1rem;
+    list-style-type: none;
+}
+
+main {
+    /*background-color: peru;*/
+    margin: 5rem auto ;
+    max-width: 1024px;
+    
+    border: solid orange 5px;
+    border-radius: 15px 50px;
+}
+
+header {
+    font-family: 'Macondo', cursive;
+    background-image:url(https://codice-boca.web.app/700x700.webp);  
+    border-radius: 15px 50px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+main > header > h1 {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+
+.menu-items{
+    /* background-color: cadetblue; */
+    margin: 5rem 4rem;
+    column-count: 2;
+    column-gap: 20px;
+    
+}
+
+.menu-item {
+    padding: 2rem;
+    page-break-inside: avoid;
+
+}
+
+footer {
+    background-color: plum;
+}
